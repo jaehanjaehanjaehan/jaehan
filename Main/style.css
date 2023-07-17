@@ -80,7 +80,7 @@ footer {
   top: 0;
   right: 0;
   width: 50%; /* 원하는 크기로 조정합니다. 배경화면 오른쪽 반을 차지하도록 설정합니다. */
-  height: 100vh; /* 원하는 높이로 설정합니다. 전체 화면 높이를 차지하도록 설정합니다. */
+  height: 80vh; /* 원하는 높이로 설정합니다. 전체 화면 높이를 차지하도록 설정합니다. */
   background-image: url('me.png');
   background-size: cover; /* 이미지를 div에 맞게 조절합니다. */
   background-position: center; /* 이미지를 가운데로 정렬합니다. */
