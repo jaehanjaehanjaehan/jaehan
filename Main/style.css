@@ -73,3 +73,11 @@ footer {
   text-align: center;
   padding: 10px;
 }
+
+
+#background-container {
+  background-image: url('me.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* 원하는 높이로 설정합니다. */
+}
