@@ -77,3 +77,9 @@ footer {
   text-align: center;
   padding: 10px;
 }
+
+
+.contact {
+  position: relative;
+  min-height: 100vh;
+}

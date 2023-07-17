@@ -85,3 +85,8 @@ footer {
   background-position: center;
   height: 100vh; /* 원하는 높이로 설정합니다. */
 }
+
+.project {
+  position: relative;
+  min-height: 100vh;
+}
