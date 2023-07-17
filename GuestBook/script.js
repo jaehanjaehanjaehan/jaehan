@@ -10,25 +10,30 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+const guestbook = document.getElementById("guestbook");
+const form = document.getElementById("guestbook-form");
+const nameInput = document.getElementById("name-input");
+const messageInput = document.getElementById("message-input");
+const entries = document.getElementById("guestbook-entries");
 
-// ...
+// 방명록 전송 이벤트 처리
+form.addEventListener("submit", function (event) {
+  event.preventDefault(); // 폼 전송 기본 동작 방지
 
-// 방명록 메시지를 추가하는 함수
-function addGuestbookMessage(name, message) {
-  // ...
+  const name = nameInput.value;
+  const message = messageInput.value;
 
-  // 새로운 메시지를 화면에 표시
-  const messageElement = document.createElement('div');
-  messageElement.classList.add('message');
-  messageElement.innerHTML = `
-    <p><strong>${name}</strong></p>
-    <p>${message}</p>
-    <div class="buttons">
-      <button class="editButton">Edit</button>
-      <button class="deleteButton">Delete</button>
-    </div>
-  `;
-  messagesContainer.insertBefore(messageElement, messagesContainer.firstChild);
+  // 방명록 항목 생성
+  const entry = document.createElement("div");
+  entry.classList.add("entry");
+  entry.innerHTML = `<strong>${name}</strong>: ${message}`;
 
-  // ...
-}
+  // 방명록에 항목 추가
+  entries.appendChild(entry);
+
+  // 입력 필드 초기화
+  nameInput.value = "";
+  messageInput.value = "";
+});
+
+// 이전 코드 생략
