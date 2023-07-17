@@ -51,13 +51,17 @@
 
 
   <section id="guestbook">
-    <h2>Guestbook</h2>
-    <form id="guestbookForm">
-      <input type="text" placeholder="Your Name" id="nameInput">
-      <input type="text" placeholder="Your Message" id="messageInput">
-      <button type="submit">Submit</button>
-    </form>
-    <div id="messagesContainer"></div>
+    <div id="guestbook" class="item">
+      <h2>방명록</h2>
+      <form id="guestbook-form">
+        <input type="text" id="name-input" class="input-field" placeholder="이름">
+        <textarea id="message-input" class="input-field" placeholder="메시지"></textarea>
+        <button type="submit">전송</button>
+      </form>
+      <div id="guestbook-entries" class="item-content">
+        <!-- 방명록 내용 -->
+      </div>
+    </div>
   </section>
 
   <footer>
