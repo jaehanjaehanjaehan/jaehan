@@ -84,6 +84,11 @@ footer {
   background-image: url('me.png');
   background-size: cover; /* 이미지를 div에 맞게 조절합니다. */
   background-position: center; /* 이미지를 가운데로 정렬합니다. */
+  z-index: -1; /* 배경 이미지를 뒤로 보이도록 합니다. */
 }
 
-background-image: url('me.png');
+.text-container {
+  position: relative;
+  z-index: 1; /* 텍스트를 앞으로 오도록 설정합니다. */
+  color: white; /* 텍스트 색상을 설정합니다. */
+}
