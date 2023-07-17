@@ -33,51 +33,6 @@
       color: inherit;
       text-decoration: none;
     }
-
-    #guestbook {
-      margin: 20px auto;
-      max-width: 500px;
-      padding: 20px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-    }
-
-    #guestbook h2 {
-      margin-top: 0;
-    }
-
-    #guestbook form {
-      margin-bottom: 20px;
-    }
-
-    #guestbook input[type="text"],
-    #guestbook textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-    }
-
-    #guestbook button {
-      padding: 10px 20px;
-      background-color: #333;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    #guestbook .message {
-      margin-bottom: 10px;
-      padding: 10px;
-      background-color: #f9f9f9;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-    }
-
-    #guestbook .message p {
-      margin: 0;
   </style>
 
 </head>
@@ -95,18 +50,15 @@
 
 
 
-    <section id="guestbook">
-      <h2>Guestbook</h2>
-      <form action="" method="POST" id="guestbookForm">
-        <input type="text" placeholder="Your Name" name="name" required>
-        <textarea placeholder="Your Message" name="message" required></textarea>
-        <button type="submit">Sign Guestbook</button>
-      </form>
-
-      <div id="messages">
-        <!-- Guestbook messages will be displayed here dynamically -->
-      </div>
-    </section>
+  <section id="guestbook">
+    <h2>Guestbook</h2>
+    <form id="guestbookForm">
+      <input type="text" placeholder="Your Name" id="nameInput">
+      <input type="text" placeholder="Your Message" id="messageInput">
+      <button type="submit">Submit</button>
+    </form>
+    <div id="messagesContainer"></div>
+  </section>
 
   <footer>
     <p>&copy; 2023 My Portfolio. All rights reserved.</p>
