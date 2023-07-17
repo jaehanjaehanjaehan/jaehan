@@ -68,7 +68,7 @@ form button {
 }
 
 footer {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -83,7 +83,7 @@ footer {
   background-image: url('me.png');
   background-size: cover;
   background-position: center;
-  height: 100vh; /* 원하는 높이로 설정합니다. */
+  height: 50vh; /* 원하는 높이로 설정합니다. */
 }
 
 .project {
